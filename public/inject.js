@@ -3,7 +3,9 @@
   if (document.getElementById("chatbot-iframe")) return;
 
   const iframe = document.createElement("iframe");
-  iframe.src = window.MyChatbotConfig?.iframeUrl || "https://chatbot-app.vercel.app";
+  iframe.src =
+    window.MyChatbotConfig?.iframeUrl ||
+    "chatbot-41xrnmieb-vuong-quang-minhs-projects.vercel.app";
   iframe.id = "chatbot-iframe";
   iframe.style.position = "fixed";
   iframe.style.bottom = "20px";
