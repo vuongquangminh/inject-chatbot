@@ -1,20 +1,17 @@
-// inject.js
 (function () {
-  if (document.getElementById("chatbot-iframe")) return;
+  if (document.getElementById("my-chatbot-iframe")) return;
 
   const iframe = document.createElement("iframe");
-  iframe.src =
-    window.MyChatbotConfig?.iframeUrl ||
-    "chatbot-bk02pftyg-vuong-quang-minhs-projects.vercel.app";
-  iframe.id = "chatbot-iframe";
+  iframe.src = "https://chatbot-app-delta-nine.vercel.app/";
+  iframe.id = "my-chatbot-iframe";
   iframe.style.position = "fixed";
   iframe.style.bottom = "20px";
   iframe.style.right = "20px";
   iframe.style.width = "400px";
-  iframe.style.height = "600px";
-  iframe.style.zIndex = "9999";
+  iframe.style.height = "300px";
   iframe.style.border = "none";
-  iframe.style.borderRadius = "10px";
-  iframe.style.boxShadow = "0 0 10px rgba(0,0,0,0.15)";
+  iframe.style.zIndex = "9999";
+  iframe.style.borderRadius = "12px";
+
   document.body.appendChild(iframe);
 })();
